@@ -44,8 +44,8 @@ steps:
 
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'Azure subscription 1(1)(a353e9e9-72b4-4744-8279-43a7977d8484)'
+    azureSubscription: 'Subscription 1(1)(f3dff6db-a5d0-4211-8eb0-0cf578f3d15c)'
     appType: 'webApp'
     appName: 'webappgmj1002'
-    package: '$(build.artifactStagingDirectory)\WebApp.zip'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     deploymentMethod: 'auto'
