@@ -32,10 +32,10 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-- task: AzureRmWebAppDeployment@4
+- task: AzureWebApp@1
   inputs:
-    ConnectionType: 'AzureRM'
-    azureSubscription: 'Azure subscription 1(a353e9e9-72b4-4744-8279-43a7977d8484)'
+    azureSubscription: 'Azure subscription 1(1)(a353e9e9-72b4-4744-8279-43a7977d8484)'
     appType: 'webApp'
-    WebAppName: 'webappgmj1002'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    appName: 'webappgmj1002'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    deploymentMethod: 'auto'
