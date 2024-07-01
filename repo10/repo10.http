@@ -1,0 +1,6 @@
+@repo10_HostAddress = http://localhost:5219
+
+GET {{repo10_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
