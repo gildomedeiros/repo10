@@ -32,6 +32,9 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+- task: PublishBuildArtifacts@1
+
 - task: AzureWebApp@1
   inputs:
     azureSubscription: 'Azure subscription 1(1)(a353e9e9-72b4-4744-8279-43a7977d8484)'
